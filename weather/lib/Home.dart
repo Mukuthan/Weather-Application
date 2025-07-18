@@ -59,7 +59,7 @@ class _homeState extends State<home> {
     print("fetch start");
     final response = await http.get(
       Uri.parse(
-        "https://api.openweathermap.org/data/2.5/weather?lat=${widget.data.latitude}&lon=${widget.data.longitude}&appid=c328d1c8d4fedcc9eb0eebfd93dca461&units=metric",
+        "https://api.openweathermap.org/data/2.5/weather?lat=${widget.data.latitude}&lon=${widget.data.longitude}&appid=(OpenWeatherMap API key)&units=metric",
       ),
     );
     print(response.statusCode);
